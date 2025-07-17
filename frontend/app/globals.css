@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+.font--poppins{
+    font-family: var(--font-poppins), sans-serif;
+}
+.font--manrope{
+    font-family: var(--font-manrope), sans-serif;
+}
+
+.heading--hero{
+    @apply text-[4.2rem] text-white text-center font-semibold -tracking-[.1rem] leading-[4.3rem]
+}
+.paragraph--hero{
+    @apply text-[1.5rem] text-neutral-400 text-center
+}
