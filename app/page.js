@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import { ReactLenis } from "lenis/react";
 import Pain from "./components/Pain";
 import Question from "./components/Question";
+import Introduction from "./components/Introduction";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Banner />
         <Pain />
         <Question />
+        <Introduction />
       </div>
     </ReactLenis>
   );
