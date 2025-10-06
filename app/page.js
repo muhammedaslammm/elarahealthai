@@ -5,6 +5,7 @@ import { ReactLenis } from "lenis/react";
 import Pain from "./components/Pain";
 import Question from "./components/Question";
 import Introduction from "./components/Introduction";
+import Vision from "./components/Vision";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Pain />
         <Question />
         <Introduction />
+        <Vision />
       </div>
     </ReactLenis>
   );

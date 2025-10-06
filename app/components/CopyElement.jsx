@@ -11,7 +11,7 @@ const CopyElement = ({
   children,
   delay = 0,
   animateOnScroll = true,
-  flex = false,
+  duration = 2,
 }) => {
   let containerRef = useRef(null);
   let splitRefs = useRef([]);
@@ -43,7 +43,7 @@ const CopyElement = ({
       });
       let animationProps = {
         y: "0%",
-        duration: 2,
+        duration: duration,
         stagger: 0.1,
         delay: delay,
         ease: "power3.out",
@@ -78,7 +78,7 @@ const CopyElement = ({
     <div
       data-multiple-children
       ref={containerRef}
-      className={`${flex ? "flex flex-col items-center" : ""}`}
+      className="flex flex-col gap-[2rem]"
     >
       {children}
     </div>
