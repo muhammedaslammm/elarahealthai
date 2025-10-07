@@ -16,3 +16,10 @@ body {
 .section__container {
   @apply w-[90%] mx-auto;
 }
+
+.point__head {
+  @apply w-2/6 text-[1.4rem] text-white uppercase;
+}
+.point__note {
+  @apply w-4/6 text-end text-white/50 text-[1.6rem] leading-[2rem];
+}

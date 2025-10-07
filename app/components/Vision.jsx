@@ -10,13 +10,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Vision = () => {
   const containerRef = useRef(null);
+  const pointsRef = useRef([]);
   useGSAP(
     () => {
       let section = containerRef.current;
       gsap.to(section, {
         scrollTrigger: {
           trigger: section,
-          start: "top 10%",
+          start: "top 5%",
           end: "+=2000",
           pin: true,
           scrub: false,
@@ -27,9 +28,12 @@ const Vision = () => {
     { scope: containerRef }
   );
   return (
-    <section className="section__container my-[17rem]" ref={containerRef}>
+    <section
+      className="section__container my-[17rem] flex flex-col gap-[4rem]"
+      ref={containerRef}
+    >
       <CopyElement>
-        <h2 className="text-white/50 text-[2rem] text-center uppercase">
+        <h2 className="text-white/50 text-[2rem] leading-[2.8rem] text-center uppercase">
           We are building an{" "}
           <span className="text-white">AI-powered platform</span> to enable
           healthcare professionals to{" "}
@@ -39,6 +43,40 @@ const Vision = () => {
           effortlessly—by simply <span className="text-white">speaking.</span>
         </h2>
       </CopyElement>
+      <div className="">
+        <div className="w-[90%] mx-auto space-y-[2rem]">
+          <div className="flex justify-between items-start">
+            <div className="point__head">Voice to Transcription</div>
+            <div className="point__note">
+              Our system will{" "}
+              <span className="text-white">
+                instantly translate natural medical dictation
+              </span>{" "}
+              into a clean, templated, and fully structured report, ready for
+              review.
+            </div>
+          </div>
+          <div className="flex justify-between">
+            <div className="point__head">Error Reduction</div>
+            <div className="point__note">
+              AI algorithms will{" "}
+              <span className="text-white">
+                cross-reference dictated findings
+              </span>{" "}
+              with relevant norms and historical data, flagging potential
+              discrepancies before sign-off.
+            </div>
+          </div>
+          <div className="flex justify-between">
+            <div className="point__head">True Efficiency</div>
+            <div className="point__note">
+              Expect to{" "}
+              <span className="text-white">save an hour or more per day</span>{" "}
+              by eliminating manual typing, formatting, and template selection.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

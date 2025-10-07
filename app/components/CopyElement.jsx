@@ -20,6 +20,8 @@ const CopyElement = ({
   useGSAP(
     () => {
       if (!containerRef.current) return;
+      splitRefs.current = [];
+      lineRefs.current = [];
 
       let elements = [];
       if (containerRef.current.hasAttribute("data-multiple-children")) {
