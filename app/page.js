@@ -6,6 +6,7 @@ import Pain from "./components/Pain";
 import Question from "./components/Question";
 import Introduction from "./components/Introduction";
 import Vision from "./components/Vision";
+import { Work } from "./components/Work";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Question />
         <Introduction />
         <Vision />
+        <Work />
       </div>
     </ReactLenis>
   );

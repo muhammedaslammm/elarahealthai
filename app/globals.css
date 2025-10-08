@@ -17,6 +17,10 @@ body {
   @apply w-[90%] mx-auto;
 }
 
+.master_container {
+  @apply overflow-x-hidden;
+}
+
 .point__head {
   @apply w-2/6 text-[1.4rem] text-white uppercase;
 }

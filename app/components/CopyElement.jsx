@@ -12,6 +12,7 @@ const CopyElement = ({
   delay = 0,
   animateOnScroll = true,
   duration = 2,
+  flex = false,
 }) => {
   let containerRef = useRef(null);
   let splitRefs = useRef([]);
@@ -43,6 +44,7 @@ const CopyElement = ({
       gsap.set(lineRefs.current, {
         y: "100%",
       });
+
       let animationProps = {
         y: "0%",
         duration: duration,
@@ -56,7 +58,7 @@ const CopyElement = ({
           ...animationProps,
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 50%",
+            start: "top 60%",
             once: true,
           },
         });
@@ -80,7 +82,9 @@ const CopyElement = ({
     <div
       data-multiple-children
       ref={containerRef}
-      className="flex flex-col gap-[2rem]"
+      className={`flex w-full  ${
+        flex ? "flex-row justify-between" : "flex-col"
+      } gap-[2rem]`}
     >
       {children}
     </div>
