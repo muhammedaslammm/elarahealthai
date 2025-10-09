@@ -1,8 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import gsap from "gsap";
-import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitText from "gsap/SplitText";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -58,7 +58,7 @@ const CopyElement = ({
           ...animationProps,
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 60%",
+            start: "top 40%",
             once: true,
           },
         });

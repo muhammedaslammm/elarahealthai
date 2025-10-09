@@ -6,18 +6,27 @@ import Pain from "./components/Pain";
 import Question from "./components/Question";
 import Introduction from "./components/Introduction";
 import Vision from "./components/Vision";
-import { Work } from "./components/Work";
+import { Work } from "./components/Working";
+import { CallToAction } from "./components/CallToAction";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 
 export default function Home() {
   return (
     <ReactLenis root>
-      <div className="pb-[500rem]">
+      <div className="">
+        <Header />
         <Banner />
         <Pain />
         <Question />
         <Introduction />
         <Vision />
         <Work />
+
+        <section className="">
+          <CallToAction />
+          <Footer />
+        </section>
       </div>
     </ReactLenis>
   );
