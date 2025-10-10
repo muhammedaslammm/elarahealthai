@@ -2,9 +2,9 @@ import CopyElement from "./CopyElement";
 
 const Question = () => {
   return (
-    <section className="section__container my-[13rem] relative">
+    <section className="section__container my-[13rem]">
       <CopyElement>
-        <div className="text-white/70 text-[3.5rem] leading-[4rem] text-center uppercase">
+        <div className="text-white/70 text-[3.5rem] leading-[4rem] text-center uppercase z-10">
           What if, the <span className="text-blue-400">report generation</span>{" "}
           could be <span className="text-white">smarter, more automatic, </span>{" "}
           freeing radiologists to{" "}

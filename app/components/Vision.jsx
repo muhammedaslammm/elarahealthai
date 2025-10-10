@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { Spotlight } from "@/components/ui/spotlight";
 
 const Vision = () => {
   const containerRef = useRef(null);

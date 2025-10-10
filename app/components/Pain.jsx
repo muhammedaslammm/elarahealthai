@@ -1,14 +1,13 @@
 "use client";
 
-import { Spotlight } from "@/components/ui/spotlight";
 import CopyElement from "./CopyElement";
 
 const Pain = () => {
   return (
-    <section className="relative section__container flex my-[8rem]">
+    <section className="section__container flex my-[8rem]">
       <div className="w-2/6">
         <CopyElement>
-          <div className="text-white/70 text-[1.8rem] leading-[2.5rem]">
+          <div className="text-white/70 text-[1.8rem] leading-[2.5rem] ">
             <span className="text-white">Manual Reporting,</span> Why is it a
             Real <span className="text-white">Pain?</span>
           </div>
