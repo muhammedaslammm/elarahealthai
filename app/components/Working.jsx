@@ -33,7 +33,7 @@ export const Work = () => {
   );
   return (
     <section
-      className="section__container flex flex-col gap-[3rem] my-[13rem] "
+      className="section__container flex flex-col gap-[3rem]  my-[13rem]"
       ref={containerRef}
     >
       <CopyElement>

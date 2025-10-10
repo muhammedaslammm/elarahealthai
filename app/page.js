@@ -10,6 +10,8 @@ import { Work } from "./components/Working";
 import { CallToAction } from "./components/CallToAction";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
   return (
@@ -22,11 +24,8 @@ export default function Home() {
         <Introduction />
         <Vision />
         <Work />
-
-        <section className="">
-          <CallToAction />
-          <Footer />
-        </section>
+        <CallToAction />
+        <Footer />
       </div>
     </ReactLenis>
   );

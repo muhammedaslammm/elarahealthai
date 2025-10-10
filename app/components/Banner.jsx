@@ -4,8 +4,8 @@ import CopyElement from "./CopyElement";
 
 const Banner = () => {
   return (
-    <section className="flex justify-center items-center h-screen pt-12">
-      <div className="text-center leading-[5rem]">
+    <section className="relative flex justify-center items-center h-screen pt-12">
+      <div className="text-center leading-[5rem] z-10">
         <CopyElement delay={0.5} animateOnScroll={false}>
           <h1 className="text-white text-[9rem] leading-[8.2rem] font-medium tracking-[-.15rem] w-full">
             SAY IT <span className="text-blue-400">ONCE,</span>
