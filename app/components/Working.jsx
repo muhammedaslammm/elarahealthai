@@ -33,12 +33,13 @@ export const Work = () => {
   );
   return (
     <section
-      className="section__container flex flex-col gap-[3rem]  my-[13rem]"
+      className="section__container flex flex-col gap-[3rem] my-[13rem]"
       ref={containerRef}
     >
       <CopyElement>
-        <h1 className="text-white/50 text-[2rem] leading-[2.8rem] text-center uppercase">
-          How <span className="text-blue-400">Elara</span> Works?
+        <h1 className="text-white/50 text-[3.5rem] leading-[2.8rem] text-center uppercase">
+          How <span className="text-blue-400">Elara</span>{" "}
+          <span className="text-white">Works?</span>
         </h1>
       </CopyElement>
       <div

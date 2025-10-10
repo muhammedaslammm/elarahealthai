@@ -35,7 +35,7 @@ const Vision = () => {
         stagger: 0.1,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 35%",
+          start: "top 30%",
         },
       });
     },

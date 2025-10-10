@@ -58,7 +58,7 @@ const CopyElement = ({
           ...animationProps,
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 40%",
+            start: "top 50%",
             once: true,
           },
         });

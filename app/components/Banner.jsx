@@ -1,10 +1,19 @@
 "use client";
 
+import { Spotlight } from "@/components/ui/spotlight";
 import CopyElement from "./CopyElement";
 
 const Banner = () => {
   return (
     <section className="relative flex justify-center items-center h-screen pt-12">
+      <Spotlight
+        fill="#a8a8a8"
+        className="absolute top-[10rem] left-[30rem] z-0 "
+      />
+      <Spotlight
+        fill="#919191"
+        className="absolute top-[0rem] h-[50rem] left-[50rem] z-0"
+      />
       <div className="text-center leading-[5rem] z-10">
         <CopyElement delay={0.5} animateOnScroll={false}>
           <h1 className="text-white text-[9rem] leading-[8.2rem] font-medium tracking-[-.15rem] w-full">
