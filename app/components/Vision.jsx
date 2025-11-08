@@ -45,11 +45,11 @@ const Vision = () => {
 
   return (
     <section
-      className="section__container my-[15rem] flex flex-col gap-[4rem]"
+      className="section__container my-[5rem] md:my-[15rem] flex flex-col gap-[4rem]"
       ref={containerRef}
     >
       <CopyElement>
-        <h2 className="text-white/50 text-[2rem] leading-[2.8rem] text-center uppercase">
+        <h2 className="text-white/50 text-[1.2rem] md:text-[2rem] leading-[1.8rem] md:leading-[2.8rem] text-start uppercase">
           We are{" "}
           <span className="text-blue-400">building an AI-powered platform</span>{" "}
           to enable healthcare professionals to{" "}
@@ -61,8 +61,8 @@ const Vision = () => {
         </h2>
       </CopyElement>
       <div className="">
-        <div className="w-[90%] mx-auto space-y-[2rem]">
-          <div className="flex justify-between items-start w-full">
+        <div className="mx-auto space-y-[2rem]">
+          <div className="flex justify-between flex-col md:flex-row items-start gap-1 md:gap-0 w-full">
             <div className="point__head anime">Voice to Report</div>
             <div className="point__note anime">
               Our system will{" "}
@@ -74,7 +74,7 @@ const Vision = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-start w-full">
+          <div className="flex justify-between flex-col md:flex-row gap-1 md:gap-0 w-full">
             <div className="point__head !text-blue-400 anime">
               Error Reduction
             </div>
@@ -88,7 +88,7 @@ const Vision = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-start w-full">
+          <div className="flex justify-between flex-col md:flex-row gap-1 md:gap-0 w-full">
             <div className="point__head anime">True Efficiency</div>
             <div className="point__note anime">
               Expect to{" "}
