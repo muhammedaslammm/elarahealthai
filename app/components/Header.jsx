@@ -16,7 +16,7 @@ export const Header = () => {
       ref={containerRef}
     >
       <div className="w-[90%] mx-auto flex justify-between items-center">
-        <div className="uppercase text-[.9rem] md:text-[1.2rem] text-white">
+        <div className="uppercase text-[.9rem] md:text-[1.2rem] text-white font-semibold">
           Elara Health AI
         </div>
         <div className="text-white text-[.8rem] sm:text-[1rem] bg-blue-600 py-1 sm:py-1.5 px-2 sm:px-4 cursor-pointer hover:bg-blue-500 transition-colors">

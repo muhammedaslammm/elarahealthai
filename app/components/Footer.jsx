@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="border-t border-neutral-800">
       <div className="section__container flex flex-col gap-8 md:gap-0 md:flex-row justify-between items-start py-[3rem]">
         <div className="space-y-1 md:space-y-3">
-          <div className="text-white text-[1rem] md:text-[2rem]">
+          <div className="text-white text-[1rem] md:text-[2rem] font-semibold">
             ELARA HEALTH AI
           </div>
           <div className="text-[1rem] md:text-[1.2rem] sm:w-[30rem] text-white/50 leading-[1.2rem] md:leading-[1.5rem]">
@@ -11,7 +11,7 @@ export const Footer = () => {
             radiologists.
           </div>
         </div>
-        <div className="text-white/50 space-y-1 md:space-y-3 text-[1rem] md:text-[1.1rem]">
+        <div className="text-white/50 space-y-1 md:space-y-3 text-[.9rem] md:text-[1.1rem]">
           <div className="text-white">Company</div>
           <ul className="md:space-y-1">
             <li>About Us</li>

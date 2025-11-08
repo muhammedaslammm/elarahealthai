@@ -52,7 +52,7 @@ const Vision = () => {
           We are{" "}
           <span className="text-blue-400">building an AI-powered platform</span>{" "}
           to enable healthcare professionals to{" "}
-          <span className="text-white">
+          <span className="text-white font-semibold">
             generate structured, accurate medical reports
           </span>{" "}
           effortlessly-{" "}
