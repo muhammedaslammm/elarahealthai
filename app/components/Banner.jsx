@@ -8,11 +8,11 @@ const Banner = () => {
     <section className="relative h-screen overflow-hidden md:pt-12">
       <Spotlight
         fill="#737373"
-        className="absolute top-[7rem] left-[25rem] z-0 "
+        className="absolute left-[10rem] md:top-[7rem] md:left-[25rem] z-0 "
       />
       <Spotlight
         fill="#919191"
-        className="absolute top-[0rem] h-[50rem] left-[47rem] z-0"
+        className="absolute -left-[5rem] h-[50rem] md:top-[0rem] md:left-[47rem] z-0"
       />
       <div className="absolute w-[80%] md:w-full top-[50%] md:top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] text-center flex flex-col gap-8 md:gap-6 z-10">
         <CopyElement delay={0.5} animateOnScroll={false}>
