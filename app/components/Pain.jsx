@@ -3,16 +3,16 @@ import CopyElement from "./CopyElement";
 
 const Pain = () => {
   return (
-    <section className="section__container flex flex-col md:flex-row my-[1rem] md:my-[8rem]">
+    <section className="section__container flex flex-col gap-4 md:flex-row md:my-[8rem]">
       <div className="w-full md:w-2/6">
         <CopyElement>
-          <div className="text-white/70 text-[1rem] md:text-[1.8rem] leading-[2.5rem] ">
+          <div className="text-white/70 text-[1rem] md:text-[1.8rem] leading-[1.5rem] md:leading-[2.5rem]">
             <span className="text-white uppercase">Manual Reporting,</span> Why
-            is it a Real <span className="text-white uppercase">Pain?</span>
+            is it a <span className="text-white uppercase">Real Pain?</span>
           </div>
         </CopyElement>
       </div>
-      <div className="text-white/70 w-full md:w-4/6 text-[1rem] text-justify md:text-[1.6rem] flex flex-col">
+      <div className="text-white/70 w-full md:w-4/6 text-[1rem] text-justify md:text-[1.6rem] uppercase flex flex-col">
         <CopyElement delay={0.2}>
           <p>
             <span className="text-white">
