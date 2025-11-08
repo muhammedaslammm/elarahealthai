@@ -84,10 +84,10 @@ body {
 }
 
 .point__head {
-  @apply w-2/6 text-[1.4rem] text-white uppercase;
+  @apply w-full md:w-2/6 text-center text-[.9rem] md:text-[1.4rem] text-white uppercase;
 }
 .point__note {
-  @apply w-4/6 text-end text-white/50 text-[1.6rem] leading-[2rem];
+  @apply w-full w-4/6 text-center text-white/50 text-[1rem] md:text-[1.6rem] leading-[1.4rem] md:leading-[2rem];
 }
 
 @theme inline {

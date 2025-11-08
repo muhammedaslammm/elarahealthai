@@ -33,34 +33,34 @@ export const Work = () => {
   );
   return (
     <section
-      className="section__container flex flex-col gap-[3rem] my-[13rem]"
+      className="section__container flex flex-col gap-4 md:gap-[3rem] my-[5rem] md:my-[13rem]"
       ref={containerRef}
     >
       <CopyElement>
-        <h1 className="text-white/50 text-[3.5rem] leading-[2.8rem] text-center uppercase">
+        <h1 className="text-white/50 text-[1.2rem] md:text-[3.5rem] leading-[2.8rem] text-start uppercase">
           How <span className="text-blue-400">Elara</span>{" "}
           <span className="text-white">Works?</span>
         </h1>
       </CopyElement>
       <div
-        className="flex flex-col items-center gap-[2rem]"
+        className="flex flex-col items-start gap-4 md:gap-[2rem]"
         id="point__container"
       >
-        <p className="point__note !text-center">
+        <p className="point__note !text-start">
           You talk{" "}
           <span className="text-white">
             through your findings and impression
           </span>{" "}
           as you do now.
         </p>
-        <p className="point__note !text-center">
+        <p className="point__note !text-start">
           Our proprietary medical{" "}
           <span className="text-blue-400">
             AI interprets context, measurements, and key medical terminology,
           </span>{" "}
           building the structured report in real-time.
         </p>
-        <p className="point__note !text-center">
+        <p className="point__note !text-start">
           <span className="text-white">
             A complete, professional report generated,
           </span>

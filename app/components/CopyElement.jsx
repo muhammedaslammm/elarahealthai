@@ -84,7 +84,7 @@ const CopyElement = ({
       ref={containerRef}
       className={`flex w-full  ${
         flex ? "flex-row justify-between" : "flex-col"
-      } gap-[2rem]`}
+      } gap-[1rem] md:gap-[2rem]`}
     >
       {children}
     </div>
