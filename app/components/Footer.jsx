@@ -21,8 +21,8 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="py-2 border-t border-neutral-800">
-        <div className="w-[90%] mx-auto text-white/50 text-[.6rem] md:text-[1rem]">
+      <div className="py-1 md:py-2 border-t border-neutral-800">
+        <div className="w-[90%] mx-auto text-white/50 text-[.7rem] md:text-[1rem]">
           &copy; {new Date().getFullYear()} Elara Health AI. All Right Reserved
         </div>
       </div>

@@ -1,6 +1,5 @@
 import CopyElement from "./CopyElement";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
@@ -32,7 +31,7 @@ const Vision = () => {
 
       gsap.to(lineRefs.current, {
         y: "0%",
-        duration: 1,
+        duration: 0.5,
         stagger: 0.1,
         scrollTrigger: {
           trigger: containerRef.current,
@@ -45,11 +44,11 @@ const Vision = () => {
 
   return (
     <section
-      className="section__container my-[5rem] md:my-[15rem] flex flex-col gap-[4rem]"
+      className="section__container my-[5rem] md:my-[15rem] flex flex-col gap-[3rem] md:gap-[8rem]"
       ref={containerRef}
     >
       <CopyElement>
-        <h2 className="text-white/50 text-[1.2rem] md:text-[2rem] leading-[1.8rem] md:leading-[2.8rem] text-start uppercase">
+        <h2 className="text-white/50 text-[1.2rem] md:text-[3rem] leading-[1.8rem] md:leading-[3.5rem] text-start md:text-center uppercase">
           We are{" "}
           <span className="text-blue-400">building an AI-powered platform</span>{" "}
           to enable healthcare professionals to{" "}
@@ -61,8 +60,8 @@ const Vision = () => {
         </h2>
       </CopyElement>
       <div className="">
-        <div className="mx-auto space-y-[2rem]">
-          <div className="flex justify-between flex-col md:flex-row items-start gap-1 md:gap-0 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[3rem]">
+          <div className="flex justify-between flex-col md:flex-col gap-1 md:gap-6 w-full border-0 border-neutral-700">
             <div className="point__head anime">Voice to Report</div>
             <div className="point__note anime">
               Our system will{" "}
@@ -74,7 +73,7 @@ const Vision = () => {
             </div>
           </div>
 
-          <div className="flex justify-between flex-col md:flex-row gap-1 md:gap-0 w-full">
+          <div className="flex justify-between flex-col md:flex-col gap-1 md:gap-6 w-full border-0 border-neutral-700">
             <div className="point__head !text-blue-400 anime">
               Error Reduction
             </div>
@@ -88,7 +87,7 @@ const Vision = () => {
             </div>
           </div>
 
-          <div className="flex justify-between flex-col md:flex-row gap-1 md:gap-0 w-full">
+          <div className="flex justify-between flex-col md:flex-col gap-1 md:gap-6 w-full border-0 border-neutral-700">
             <div className="point__head anime">True Efficiency</div>
             <div className="point__note anime">
               Expect to{" "}

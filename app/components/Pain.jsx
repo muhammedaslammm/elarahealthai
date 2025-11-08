@@ -1,5 +1,4 @@
 "use client";
-
 import CopyElement from "./CopyElement";
 
 const Pain = () => {
@@ -8,15 +7,12 @@ const Pain = () => {
       <div className="w-full md:w-2/6">
         <CopyElement>
           <div className="text-white/70 text-[1rem] md:text-[1.8rem] leading-[2.5rem] ">
-            <span className="text-white uppercase md:normal-case">
-              Manual Reporting,
-            </span>{" "}
-            Why is it a Real{" "}
-            <span className="text-white uppercase md:normal-case">Pain?</span>
+            <span className="text-white uppercase">Manual Reporting,</span> Why
+            is it a Real <span className="text-white uppercase">Pain?</span>
           </div>
         </CopyElement>
       </div>
-      <div className="text-white/70 w-full md:w-4/6 text-[1rem] md:text-[1.6rem] flex flex-col">
+      <div className="text-white/70 w-full md:w-4/6 text-[1rem] text-justify md:text-[1.6rem] flex flex-col">
         <CopyElement delay={0.2}>
           <p>
             <span className="text-white">
